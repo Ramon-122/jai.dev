@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark Tech Theme Design System */
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 270 70% 60%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 270 70% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 20%;
+    --input: 217 33% 17%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradient and glow variables */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(270 70% 60%));
+    --gradient-hover: linear-gradient(135deg, hsl(217 91% 65%), hsl(270 70% 65%));
+    --glow-primary: 0 0 20px hsl(217 91% 60% / 0.4);
+    --glow-secondary: 0 0 20px hsl(270 70% 60% / 0.4);
+    --glow-combined: 0 0 30px hsl(217 91% 60% / 0.3), 0 0 60px hsl(270 70% 60% / 0.2);
+
+    /* Glassmorphism */
+    --glass-bg: hsl(222 47% 10% / 0.7);
+    --glass-border: hsl(217 33% 30% / 0.5);
+    --glass-shadow: 0 8px 32px hsl(0 0% 0% / 0.3);
+
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 20%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 6%;
+    --secondary: 270 70% 60%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 270 70% 60%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 20%;
+    --input: 217 33% 17%;
+    --ring: 217 91% 60%;
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 20%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Glassmorphism card */
+  .glass-card {
+    @apply relative rounded-xl border border-border/50 bg-card/70 backdrop-blur-xl;
+    box-shadow: var(--glass-shadow);
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300;
+  }
+
+  .glass-card-hover:hover {
+    @apply border-primary/50;
+    box-shadow: var(--glow-primary);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  /* Glow effects */
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+
+  .glow-secondary {
+    box-shadow: var(--glow-secondary);
+  }
+
+  .glow-combined {
+    box-shadow: var(--glow-combined);
+  }
+
+  /* Neumorphism button */
+  .neo-button {
+    @apply relative rounded-lg px-6 py-3 font-medium text-foreground transition-all duration-300;
+    background: linear-gradient(145deg, hsl(222 47% 12%), hsl(222 47% 8%));
+    box-shadow: 
+      5px 5px 10px hsl(222 47% 4%),
+      -5px -5px 10px hsl(222 47% 12%);
+  }
+
+  .neo-button:hover {
+    box-shadow: 
+      inset 5px 5px 10px hsl(222 47% 4%),
+      inset -5px -5px 10px hsl(222 47% 12%);
+  }
+
+  .neo-button:active {
+    box-shadow: 
+      inset 3px 3px 6px hsl(222 47% 4%),
+      inset -3px -3px 6px hsl(222 47% 12%);
+  }
+
+  /* Section styling */
+  .section-container {
+    @apply mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl;
+  }
+
+  .section-subtitle {
+    @apply mb-12 text-lg text-muted-foreground;
+  }
+
+  /* Timeline connector */
+  .timeline-line {
+    @apply absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2;
+    background: linear-gradient(180deg, hsl(217 91% 60%), hsl(270 70% 60%));
+    box-shadow: 0 0 10px hsl(217 91% 60% / 0.5);
+  }
+
+  .timeline-dot {
+    @apply absolute left-1/2 h-4 w-4 -translate-x-1/2 rounded-full border-2 border-primary bg-background;
+    box-shadow: var(--glow-primary);
+  }
+
+  /* Skill card tilt */
+  .tilt-card {
+    @apply transition-transform duration-200;
+    transform-style: preserve-3d;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
