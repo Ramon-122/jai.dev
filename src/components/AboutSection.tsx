@@ -60,7 +60,7 @@ const AboutSection = () => {
               My expertise spans across enterprise blockchain platforms including 
               <span className="text-primary"> Hyperledger Fabric</span>, 
               <span className="text-secondary"> Ethereum</span>, 
-              <span className="text-primary"> Corda</span>, and 
+              <span className="text-primary"> Hyperledger Besu</span>, and 
               <span className="text-secondary"> Quorum</span>. I specialize in building 
               microservices architectures using Spring Boot and creating modern frontend 
               experiences with Angular and React.
