@@ -10,24 +10,6 @@ const certifications = [
     color: "from-blue-500 to-cyan-500",
   },
   {
-    title: "Ethereum & Solidity Developer",
-    issuer: "Blockchain Council",
-    description: "Advanced smart contract development, DApp creation, and Ethereum ecosystem expertise",
-    color: "from-purple-500 to-pink-500",
-  },
-  {
-    title: "Kubernetes Certified",
-    issuer: "Cloud Native Computing Foundation",
-    description: "Container orchestration, deployment strategies, and Kubernetes administration",
-    color: "from-indigo-500 to-blue-500",
-  },
-  {
-    title: "Docker DevOps",
-    issuer: "Docker Inc",
-    description: "Containerization best practices, Docker Compose, and container security",
-    color: "from-sky-500 to-cyan-500",
-  },
-  {
     title: "AWS AI Practitioner",
     issuer: "Amazon Web Services",
     description: "AWS AI/ML services, cloud architecture, and practical AI implementation",

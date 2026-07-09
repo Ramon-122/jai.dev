@@ -15,25 +15,25 @@ const skillCategories = [
   {
     title: "Frameworks",
     icon: Server,
-    skills: ["Spring Boot", "Angular", "React.js", "Node.js", "REST APIs"],
+    skills: ["Spring Boot", "Angular"],
     color: "from-purple-500 to-pink-500",
   },
   {
     title: "Blockchain",
     icon: Link2,
-    skills: ["Hyperledger Fabric", "Ethereum", "Quorum", "Corda", "Solidity"],
+    skills: ["Hyperledger Fabric", "Ethereum", "Quorum", "Hyperledger Besu"],
     color: "from-orange-500 to-yellow-500",
   },
   {
     title: "Databases",
     icon: Database,
-    skills: ["PostgreSQL", "MongoDB", "CouchDB", "MySQL", "Redis"],
+    skills: ["PostgreSQL", "MongoDB", "CouchDB", "MySQL"],
     color: "from-green-500 to-emerald-500",
   },
   {
     title: "DevOps & Cloud",
     icon: Cloud,
-    skills: ["Docker", "Kubernetes", "Jenkins", "AWS", "Azure DevOps"],
+    skills: ["Docker", "Kubernetes", "Jenkins", "AWS", "Git"],
     color: "from-indigo-500 to-violet-500",
   },
 ];

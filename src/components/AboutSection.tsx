@@ -53,7 +53,7 @@ const AboutSection = () => {
             </h3>
             <p className="mb-4 leading-relaxed text-muted-foreground">
               I'm a passionate <span className="text-primary">Software Engineer</span> with 
-              2+ years of experience in designing and developing scalable web applications 
+              3 years of experience in designing and developing scalable web applications 
               and <span className="text-secondary">blockchain solutions</span>.
             </p>
             <p className="mb-4 leading-relaxed text-muted-foreground">

@@ -1,39 +1,74 @@
-# Welcome 
+# Portfolio Sparkle
+
+A Vite + React + TypeScript portfolio project built with Tailwind CSS and shadcn UI.
+
+## Quick Start
+
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone repository
 git clone <YOUR_GIT_URL>
+cd portfolio-sparkle
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start local development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Then open the local URL shown in the terminal, usually `http://localhost:5173`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Build for Production
 
-**Use GitHub Codespaces**
+```sh
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The production output is generated in the `dist/` folder.
 
-## What technologies are used for this project?
+## GitHub Pages Deployment
 
-This project is built with:
+This project is already configured to deploy to GitHub Pages using the `gh-pages` package.
+
+### 1. Verify repository settings
+
+- Confirm the `homepage` field in `package.json` points to your GitHub Pages URL.
+  - Example: `https://<USERNAME>.github.io/<REPO_NAME>`
+- Confirm `vite.config.ts` has the `base` option set to the repository path.
+  - Example: `base: "/jai.dev/",`
+
+### 2. Deploy
+
+```sh
+npm run deploy
+```
+
+This runs the build and publishes the `dist/` directory to the `gh-pages` branch.
+
+### 3. Confirm deployment
+
+- Visit your GitHub Pages site URL in the browser.
+- If the site does not show correctly, wait a few minutes and reload.
+
+## Routing Notes for GitHub Pages
+
+This project uses `HashRouter` from `react-router-dom`, which is the recommended choice for GitHub Pages because it avoids server-side route handling.
+
+## Available Scripts
+
+- `npm run dev` - start development server
+- `npm run build` - create production build
+- `npm run preview` - preview production build locally
+- `npm run lint` - run ESLint
+- `npm run test` - run Vitest
+- `npm run deploy` - build and deploy to GitHub Pages
+
+## Tech Stack
 
 - Vite
-- TypeScript
 - React
-- shadcn-ui
+- TypeScript
 - Tailwind CSS
+- shadcn UI
+- GitHub Pages
 

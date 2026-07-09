@@ -8,11 +8,11 @@ import { ExternalLink, Folder } from "lucide-react";
 
 const projects = [
   {
-    title: "TDRA Digital Vault",
-    subtitle: "UAE Digital Trust Platform",
+    title: "Digital Vault",
+    subtitle: "Digital Trust Platform",
     description:
-      "Enterprise-grade digital trust platform for UAE's Telecommunications and Digital Government Regulatory Authority. Implements secure document management and verification using Quorum blockchain.",
-    technologies: ["Quorum", "Spring Boot", "Angular", "PostgreSQL", "Docker"],
+      "Enterprise-grade digital trust platform for Telecommunications and Digital Government Regulatory Authority. Implements secure document management and verification using Quorum blockchain.",
+    technologies: ["Quorum", "Spring Boot", "Angular", "PostgreSQL","Kibana"],
     highlights: ["Private blockchain network", "Document verification", "Government compliance"],
   },
   {
@@ -20,23 +20,23 @@ const projects = [
     subtitle: "Hyperledger Fabric Solution",
     description:
       "Decentralized asset management system built on Hyperledger Fabric for tracking and managing asset coverage across multiple organizations with complete audit trails.",
-    technologies: ["Hyperledger Fabric", "Node.js", "CouchDB", "React", "Kubernetes"],
+    technologies: ["Hyperledger Fabric", "Node.js","Spring Boot", "CouchDB", "React", "Docker"],
     highlights: ["Multi-org network", "Smart contracts", "Real-time tracking"],
   },
   {
     title: "Banking Application",
     subtitle: "Corda R3 Platform",
     description:
-      "Secure banking application leveraging Corda's private transaction capability for inter-bank settlements and loan syndication with regulatory compliance.",
-    technologies: ["Corda", "Kotlin", "Spring Boot", "Angular", "Oracle DB"],
-    highlights: ["Private transactions", "Regulatory compliance", "Inter-bank settlements"],
+      "Secure banking application using spring boot microservices capability for inter-bank settlements and loan syndication with regulatory compliance.",
+    technologies: ["Spring Boot", "Angular", "Oracle DB"],
+    highlights: ["Microservices architecture", "Regulatory compliance", "Inter-bank settlements"],
   },
   {
     title: "Agile Project Management",
     subtitle: "Sprint Management Platform",
     description:
       "Full-featured project management platform for agile teams with sprint planning, backlog management, burndown charts, and team collaboration features.",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.io", "AWS"],
+    technologies: ["Angular", "Node.js", "MongoDB", "Spring Boot"],
     highlights: ["Real-time updates", "Sprint analytics", "Team collaboration"],
   },
 ];

@@ -9,7 +9,7 @@ const experiences = [
     location: "Kolkata, India",
     period: "09/2024 – Present",
     description: [
-      "Lead development of blockchain-based solutions using Hyperledger Fabric and Quorum",
+      "Developed blockchain-based solutions using Hyperledger Fabric and Quorum",
       "Design and implement microservices architecture with Spring Boot",
       "Collaborate with cross-functional teams to deliver enterprise applications",
       "Mentor junior developers and conduct code reviews",
