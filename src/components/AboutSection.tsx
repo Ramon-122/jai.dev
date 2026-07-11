@@ -105,9 +105,9 @@ const AboutSection = () => {
               className="glass-card grid grid-cols-3 gap-4 p-6"
             >
               {[
-                { value: "2+", label: "Years Experience" },
-                { value: "4+", label: "Projects Delivered" },
-                { value: "5+", label: "Certifications" },
+                { value: "3", label: "Years Experience" },
+                { value: "3+", label: "Projects Delivered" },
+                { value: "2", label: "Certifications" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <p className="gradient-text text-2xl font-bold">{stat.value}</p>
