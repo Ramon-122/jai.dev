@@ -16,6 +16,14 @@ const projects = [
     highlights: ["Private blockchain network", "Document verification", "Government compliance"],
   },
   {
+    title: "Automatic Sanity Checker",
+    subtitle: "Automated Testing Tool",
+    description:
+      "Automated testing tool to validate API endpoints against predefined API contracts, automate sanity testing, generate comprehensive test reports, and distribute results to stakeholders.",
+    technologies: ["Angular", "Spring Boot", "MongoDB", "AWS AI Features"],
+    highlights: ["Automate testing", "Report generation", "Strict to API contracts"],
+  },
+  {
     title: "Asset Cover Management",
     subtitle: "Hyperledger Fabric Solution",
     description:
@@ -25,20 +33,13 @@ const projects = [
   },
   {
     title: "Banking Application",
-    subtitle: "Corda R3 Platform",
+    subtitle: "Banking Platform",
     description:
       "Secure banking application using spring boot microservices capability for inter-bank settlements and loan syndication with regulatory compliance.",
     technologies: ["Spring Boot", "Angular", "Oracle DB"],
     highlights: ["Microservices architecture", "Regulatory compliance", "Inter-bank settlements"],
   },
-  {
-    title: "Agile Project Management",
-    subtitle: "Sprint Management Platform",
-    description:
-      "Full-featured project management platform for agile teams with sprint planning, backlog management, burndown charts, and team collaboration features.",
-    technologies: ["Angular", "Node.js", "MongoDB", "Spring Boot"],
-    highlights: ["Real-time updates", "Sprint analytics", "Team collaboration"],
-  },
+
 ];
 
 interface ProjectCardProps {
